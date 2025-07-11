@@ -2,7 +2,7 @@ import strawberry
 from typing import List
 import sys
 
-# ✅ Soporte para versiones < 3.10
+
 if sys.version_info >= (3, 10):
     from builtins import anext
 else:
