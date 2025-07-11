@@ -1,6 +1,6 @@
 from fastapi import Request, HTTPException
 import jwt
-from app.config.settings import SECRET_KEY  # ✅ Importar desde settings
+from app.config.settings import SECRET_KEY 
 
 async def get_current_user(request: Request):
     auth = request.headers.get("Authorization")
