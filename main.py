@@ -29,7 +29,7 @@ async def get_context(request: Request):
 
 # GraphQL
 graphql_app = GraphQLRouter(schema, context_getter=get_context)
-app.include_router(graphql_app, prefix="/pricing")
+app.include_router(graphql_app, prefix="/api/pricing")
 
 # Conexión a la base de datos al iniciar
 @app.on_event("startup")
